@@ -1,0 +1,7 @@
+<resources>
+    <string name="subTopic1">1. Basics of C++</string>
+    <string name="subTopic2">2. Program structure</string>
+    <string name="subTopic3">3. Compound data types</string>
+    <string name="subTopic4">4. Classes</string>
+
+</resources>
