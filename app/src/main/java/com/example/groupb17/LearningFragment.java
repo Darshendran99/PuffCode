@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
@@ -22,6 +23,7 @@ public class LearningFragment extends Fragment {
         cpp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(getActivity(), "C++ Selected", Toast.LENGTH_SHORT).show();
                 Intent cpp = new Intent(getActivity(),cpp_Learn.class);
                 startActivity(cpp);
             }
@@ -31,6 +33,7 @@ public class LearningFragment extends Fragment {
         javaBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(getActivity(), "Java Selected", Toast.LENGTH_SHORT).show();
                 Intent javaBtn = new Intent(getActivity(),java_Learn.class);
                 startActivity(javaBtn);
             }
@@ -40,6 +43,7 @@ public class LearningFragment extends Fragment {
         phpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(getActivity(), "PHP Selected", Toast.LENGTH_SHORT).show();
                 Intent phpBtn = new Intent(getActivity(),php_Learn.class);
                 startActivity(phpBtn);
             }
@@ -49,6 +53,7 @@ public class LearningFragment extends Fragment {
         pythonBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(getActivity(), "PythonSelected", Toast.LENGTH_SHORT).show();
                 Intent pythonBtn = new Intent(getActivity(),python_Learn.class);
                 startActivity(pythonBtn);
             }

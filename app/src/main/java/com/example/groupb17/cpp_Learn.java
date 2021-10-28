@@ -1,19 +1,17 @@
 package com.example.groupb17;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.NavigationUI;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class cpp_Learn extends AppCompatActivity {
     ImageButton back_learn_btn;
+    TextView cpp_subtopic_1, cpp_subtopic_2, cpp_subtopic_3, cpp_subtopic_4;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +23,16 @@ public class cpp_Learn extends AppCompatActivity {
             public void onClick(View view) {
                 Intent backLearnBtn = new Intent(cpp_Learn.this, MainActivity.class);
                 startActivity(backLearnBtn);
+                finish();
+            }
+        });
+
+        cpp_subtopic_1 = findViewById(R.id.cpp_subtopic_1);
+        cpp_subtopic_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent cpp_subtopic_1 = new Intent(cpp_Learn.this, ccp_sub1.class);
+                startActivity(cpp_subtopic_1);
                 finish();
             }
         });
