@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GroupB17">
         <activity
+            android:name=".python_Learn"
+            android:exported="false" />
+        <activity
+            android:name=".php_Learn"
+            android:exported="false" />
+        <activity
+            android:name=".java_Learn"
+            android:exported="false" />
+        <activity
             android:name=".cpp_Learn"
             android:exported="false" />
         <activity
@@ -28,6 +37,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

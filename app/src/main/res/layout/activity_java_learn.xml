@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/gradient_background"
-        tools:context=".cpp_Learn">
+        tools:context=".java_Learn">
 
         <ImageButton
             android:id="@+id/back_learn_btn"
@@ -35,14 +35,14 @@
 
 
         <TextView
-            android:id="@+id/cpp_subtopic_1"
+            android:id="@+id/java_subtopic_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="104dp"
             android:layout_marginEnd="323dp"
             android:fontFamily="@font/open_sans"
-            android:text="@string/cpp_subtopic_1"
+            android:text="@string/java_subtopic_1"
             android:textColor="@color/white"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -57,23 +57,23 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.262"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cpp_subtopic_1" />
+            app:layout_constraintTop_toBottomOf="@+id/java_subtopic_1" />
 
         <TextView
-            android:id="@+id/cpp_subtopic_2"
+            android:id="@+id/java_subtopic_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="48dp"
             android:layout_marginEnd="98dp"
             android:fontFamily="@font/open_sans"
-            android:text="@string/cpp_subtopic_2"
+            android:text="@string/java_subtopic_2"
             android:textColor="@color/white"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cpp_subtopic_1" />
+            app:layout_constraintTop_toBottomOf="@+id/java_subtopic_1" />
 
         <View
             android:layout_width="350dp"
@@ -82,23 +82,23 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.27"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cpp_subtopic_2" />
+            app:layout_constraintTop_toBottomOf="@+id/java_subtopic_2" />
 
         <TextView
-            android:id="@+id/cpp_subtopic_3"
+            android:id="@+id/java_subtopic_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="48dp"
             android:layout_marginEnd="47dp"
             android:fontFamily="@font/open_sans"
-            android:text="@string/cpp_subtopic_3"
+            android:text="@string/java_subtopic_3"
             android:textColor="@color/white"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cpp_subtopic_2" />
+            app:layout_constraintTop_toBottomOf="@+id/java_subtopic_2" />
 
         <View
             android:layout_width="350dp"
@@ -107,23 +107,23 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.27"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cpp_subtopic_3" />
+            app:layout_constraintTop_toBottomOf="@+id/java_subtopic_3" />
 
         <TextView
-            android:id="@+id/cpp_subtopic_4"
+            android:id="@+id/java_subtopic_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="48dp"
             android:layout_marginEnd="235dp"
             android:fontFamily="@font/open_sans"
-            android:text="@string/cpp_subtopic_4"
+            android:text="@string/java_subtopic_4"
             android:textColor="@color/white"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cpp_subtopic_3" />
+            app:layout_constraintTop_toBottomOf="@+id/java_subtopic_3" />
 
         <View
             android:id="@+id/line6"
@@ -136,7 +136,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.262"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cpp_subtopic_4" />
+            app:layout_constraintTop_toBottomOf="@+id/java_subtopic_4" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

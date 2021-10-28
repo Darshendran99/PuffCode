@@ -10,4 +10,5 @@
     <color name="white2">#B1ADA9</color>
     <color name="Grey">#808ec4</color>
     <color name="bg">#CBC3E3</color>
+    <color name="transparent">#80FFFFFF</color>
 </resources>

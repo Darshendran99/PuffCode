@@ -3,12 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
-    android:layout_width="match_parent"
-    android:background="@drawable/gradient_background">
+    android:orientation="vertical"
+    android:layout_width="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         tools:context=".LearningFragment">
 
         <ImageButton
@@ -18,7 +19,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="90dp"
             android:backgroundTint="#7E33FF"
-            app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+            app:layout_constraintEnd_toStartOf="@+id/javaBtn"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -26,7 +27,7 @@
             tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
 
         <ImageButton
-            android:id="@+id/imageButton2"
+            android:id="@+id/javaBtn"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginTop="90dp"
@@ -45,9 +46,10 @@
             android:layout_marginEnd="60dp"
             android:text="Java"
             android:textColor="@color/white"
+            android:fontFamily="@font/open_sans"
             android:textSize="40sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+            app:layout_constraintTop_toBottomOf="@+id/javaBtn" />
 
         <TextView
             android:id="@+id/textView5"
@@ -57,6 +59,7 @@
             android:layout_marginTop="15dp"
             android:text="C++"
             android:textColor="@color/white"
+            android:fontFamily="@font/open_sans"
             android:textSize="40sp"
             app:layout_constraintEnd_toStartOf="@+id/textView6"
             app:layout_constraintHorizontal_bias="0.0"
@@ -72,22 +75,23 @@
             android:layout_marginBottom="130dp"
             android:text="PHP"
             android:textColor="@color/white"
+            android:fontFamily="@font/open_sans"
             android:textSize="40sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/textView8"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+            app:layout_constraintTop_toBottomOf="@+id/phpBtn"
             app:layout_constraintVertical_bias="0.0"/>
 
         <ImageButton
-            android:id="@+id/imageButton3"
+            android:id="@+id/phpBtn"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginStart="30dp"
             android:layout_marginTop="80dp"
             android:backgroundTint="#7E33FF"
-            app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+            app:layout_constraintEnd_toStartOf="@+id/pythonBtn"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView5"
@@ -103,15 +107,16 @@
             android:layout_marginBottom="130dp"
             android:text="Python"
             android:textColor="@color/white"
+            android:fontFamily="@font/open_sans"
             android:textSize="40sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+            app:layout_constraintTop_toBottomOf="@+id/pythonBtn"
             app:layout_constraintVertical_bias="0.0"/>
 
         <ImageButton
-            android:id="@+id/imageButton4"
+            android:id="@+id/pythonBtn"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginTop="80dp"

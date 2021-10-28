@@ -1,0 +1,26 @@
+<resources>
+    <!--c++ https://www.cplusplus.com/doc/tutorial/ -->
+    <string name="cpp_subtopic_1">Basics of C++</string>
+    <string name="cpp_subtopic_2">Program structure</string>
+    <string name="cpp_subtopic_3">Compound data types</string>
+    <string name="cpp_subtopic_4">Classes</string>
+
+    <!--Java https://www.tutorialspoint.com/java/java_basic_datatypes.htm -->
+    <string name="java_subtopic_1">Basic Syntax</string>
+    <string name="java_subtopic_2">Basic Datatypes</string>
+    <string name="java_subtopic_3">Loop Control</string>
+    <string name="java_subtopic_4">Methods</string>
+
+    <!--PhP https://www.w3schools.com/php/default.asp -->
+    <string name="php_subtopic_1">PHP Syntax, Echo, Print</string>
+    <string name="php_subtopic_2">Data Types</string>
+    <string name="php_subtopic_3">Math Functions</string>
+    <string name="php_subtopic_4">PHP if…else…elseif Statements</string>
+
+    <!--Python https://www.w3schools.com/php/default.asp -->
+    <string name="python_subtopic_1">Python Syntax</string>
+    <string name="python_subtopic_2">Data Types</string>
+    <string name="python_subtopic_3">Python If ... Else</string>
+    <string name="python_subtopic_4">Classes and Objects</string>
+
+</resources>
