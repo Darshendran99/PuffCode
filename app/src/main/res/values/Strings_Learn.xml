@@ -2,7 +2,7 @@
     <!--c++ -->
     <string name="cpp_subtopic_1">Basics of C++</string>
     <string name="cpp_subtopic_2">Data Types</string>
-    <string name="cpp_subtopic_3">Classes</string>
+    <string name="cpp_subtopic_3">Classes &amp; Objects</string>
     <string name="cpp_subtopic_4">Data Structures</string>
 
     <!--Java https://www.tutorialspoint.com/java/java_basic_datatypes.htm -->

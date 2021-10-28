@@ -36,6 +36,34 @@ public class cpp_Learn extends AppCompatActivity {
                 finish();
             }
         });
+        cpp_subtopic_2 = findViewById(R.id.cpp_subtopic_2);
+        cpp_subtopic_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent cpp_subtopic_2 = new Intent(cpp_Learn.this, ccp_sub2.class);
+                startActivity(cpp_subtopic_2);
+                finish();
+            }
+        });
+        cpp_subtopic_3 = findViewById(R.id.cpp_subtopic_3);
+        cpp_subtopic_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent cpp_subtopic_3 = new Intent(cpp_Learn.this, ccp_sub3.class);
+                startActivity(cpp_subtopic_3);
+                finish();
+            }
+        });
+        cpp_subtopic_4 = findViewById(R.id.cpp_subtopic_4);
+        cpp_subtopic_4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent cpp_subtopic_4 = new Intent(cpp_Learn.this, ccp_sub4.class);
+                startActivity(cpp_subtopic_4);
+                finish();
+            }
+        });
+
 
     }
 }

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_background"
+        tools:context=".ccp_sub4">
+
+        <ImageButton
+            android:id="@+id/back_learn_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="337dp"
+            android:backgroundTint="#004E33FF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.062"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/cpp_defStructure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="118dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="119dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Defining a Structure"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/back_learn_btn" />
+
+        <ImageView
+            android:id="@+id/ccpImg10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cpp_defStructure"
+            app:srcCompat="@drawable/ccp10" />
+
+        <TextView
+            android:id="@+id/cpp_accessStruct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="118dp"
+            android:layout_marginEnd="119dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Accessing Structure Members"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ccpImg10" />
+
+        <ImageView
+            android:id="@+id/ccpImg11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cpp_accessStruct"
+            app:srcCompat="@drawable/ccp11" />
+
+        <TextView
+            android:id="@+id/structPointers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="118dp"
+            android:layout_marginEnd="119dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Pointers to Structures"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ccpImg11" />
+
+        <ImageView
+            android:id="@+id/ccpImg12_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/structPointers"
+            app:srcCompat="@drawable/ccp12_5" />
+
+        <ImageView
+            android:id="@+id/ccpImg12_55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ccpImg12_5"
+            app:srcCompat="@drawable/ccp12_55" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

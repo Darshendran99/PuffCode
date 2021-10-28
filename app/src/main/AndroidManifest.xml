@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GroupB17">
         <activity
+            android:name=".ccp_sub4"
+            android:exported="false" />
+        <activity
+            android:name=".ccp_sub3"
+            android:exported="false" />
+        <activity
+            android:name=".ccp_sub2"
+            android:exported="false" />
+        <activity
             android:name=".ccp_sub1"
             android:exported="false" />
         <activity
@@ -36,6 +45,7 @@
             android:theme="@style/splashScreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

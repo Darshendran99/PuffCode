@@ -16,7 +16,7 @@
         <entry key="..\:/Andriod/GroupB17/app/src/main/res/drawable/ic_news.xml" value="0.290625" />
         <entry key="..\:/Andriod/GroupB17/app/src/main/res/drawable/ic_quiz.xml" value="0.290625" />
         <entry key="..\:/Andriod/GroupB17/app/src/main/res/drawable/splash_img.xml" value="0.290625" />
-        <entry key="..\:/Andriod/GroupB17/app/src/main/res/layout/activity_cpp_learn.xml" value="0.1" />
+        <entry key="..\:/Andriod/GroupB17/app/src/main/res/layout/activity_cpp_learn.xml" value="0.264" />
         <entry key="..\:/Andriod/GroupB17/app/src/main/res/layout/activity_java_learn.xml" value="0.27447916666666666" />
         <entry key="..\:/Andriod/GroupB17/app/src/main/res/layout/activity_login.xml" value="0.27447916666666666" />
         <entry key="..\:/Andriod/GroupB17/app/src/main/res/layout/activity_main.xml" value="0.264" />
@@ -24,6 +24,9 @@
         <entry key="..\:/Andriod/GroupB17/app/src/main/res/layout/activity_python_learn.xml" value="0.27447916666666666" />
         <entry key="..\:/Andriod/GroupB17/app/src/main/res/layout/activity_register.xml" value="0.27447916666666666" />
         <entry key="..\:/Andriod/GroupB17/app/src/main/res/layout/ccp_sub1.xml" value="0.37086558761435606" />
+        <entry key="..\:/Andriod/GroupB17/app/src/main/res/layout/ccp_sub2.xml" value="0.1" />
+        <entry key="..\:/Andriod/GroupB17/app/src/main/res/layout/ccp_sub3.xml" value="0.264" />
+        <entry key="..\:/Andriod/GroupB17/app/src/main/res/layout/ccp_sub4.xml" value="0.2604166666666667" />
         <entry key="..\:/Andriod/GroupB17/app/src/main/res/layout/fragment2.xml" value="0.2604166666666667" />
         <entry key="..\:/Andriod/GroupB17/app/src/main/res/layout/fragment_cpp.xml" value="0.27447916666666666" />
         <entry key="..\:/Andriod/GroupB17/app/src/main/res/layout/fragment_learning.xml" value="0.27447916666666666" />
