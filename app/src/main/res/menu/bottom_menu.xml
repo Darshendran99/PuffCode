@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/learningFragment"
+        android:title="Learn"
+        android:icon="@drawable/ic_learn"/>
+    <item
+        android:id="@+id/quizFragment"
+        android:title="Quiz"
+        android:icon="@drawable/ic_quiz"/>
+    <item
+        android:id="@+id/newsFragments"
+        android:title="News"
+        android:icon="@drawable/ic_news"/>
+</menu>

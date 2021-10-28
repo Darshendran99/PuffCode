@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/learningFragment">
+
+    <fragment
+        android:id="@+id/learningFragment"
+        android:name="com.example.groupb17.LearningFragment"
+        android:label="fragment_learning"
+        tools:layout="@layout/fragment_learning" />
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.example.groupb17.QuizFragment"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz" />
+    <fragment
+        android:id="@+id/newsFragments"
+        android:name="com.example.groupb17.NewsFragments"
+        android:label="fragment_news_fragments"
+        tools:layout="@layout/fragment_news_fragments" />
+</navigation>
