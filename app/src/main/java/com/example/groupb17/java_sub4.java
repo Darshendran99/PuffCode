@@ -7,18 +7,19 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ccp_sub4 extends AppCompatActivity {
+public class java_sub4 extends AppCompatActivity {
     ImageButton back_learn_btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ccp_sub4);
+        setContentView(R.layout.java_sub4);
+
         back_learn_btn = findViewById(R.id.back_learn_btn);
         back_learn_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent backLearnBtn = new Intent(ccp_sub4.this, cpp_Learn.class);
-                startActivity(backLearnBtn);
+                Intent backLearnBtn2 = new Intent(java_sub4.this, java_Learn.class);
+                startActivity(backLearnBtn2);
                 finish();
             }
         });

@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GroupB17">
         <activity
+            android:name=".java_sub4"
+            android:exported="false" />
+        <activity
+            android:name=".java_sub3"
+            android:exported="false" />
+        <activity
+            android:name=".java_sub2"
+            android:exported="false" />
+        <activity
+            android:name=".java_sub1"
+            android:exported="false" />
+        <activity
             android:name=".ccp_sub4"
             android:exported="false" />
         <activity

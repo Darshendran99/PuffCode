@@ -22,5 +22,8 @@ public class ccp_sub2 extends AppCompatActivity {
                 finish();
             }
         });
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
     }
 }

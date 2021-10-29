@@ -63,7 +63,9 @@ public class cpp_Learn extends AppCompatActivity {
                 finish();
             }
         });
-
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
 
     }
 }
