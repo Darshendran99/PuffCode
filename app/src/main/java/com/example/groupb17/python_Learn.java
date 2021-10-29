@@ -31,7 +31,7 @@ public class python_Learn extends AppCompatActivity {
         python_subtopic_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent python_subtopic_1 = new Intent(python_Learn.this, php_sub1.class);
+                Intent python_subtopic_1 = new Intent(python_Learn.this, python_sub1.class);
                 startActivity(python_subtopic_1);
                 finish();
             }
@@ -40,7 +40,7 @@ public class python_Learn extends AppCompatActivity {
         python_subtopic_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent python_subtopic_2 = new Intent(python_Learn.this, php_sub2.class);
+                Intent python_subtopic_2 = new Intent(python_Learn.this, python_sub2.class);
                 startActivity(python_subtopic_2);
                 finish();
             }
@@ -49,7 +49,7 @@ public class python_Learn extends AppCompatActivity {
         python_subtopic_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent python_subtopic_3 = new Intent(python_Learn.this, php_sub3.class);
+                Intent python_subtopic_3 = new Intent(python_Learn.this, python_sub3.class);
                 startActivity(python_subtopic_3);
                 finish();
             }
@@ -58,7 +58,7 @@ public class python_Learn extends AppCompatActivity {
         python_subtopic_4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent python_subtopic_4 = new Intent(python_Learn.this, php_sub4.class);
+                Intent python_subtopic_4 = new Intent(python_Learn.this, python_sub4.class);
                 startActivity(python_subtopic_4);
                 finish();
             }
