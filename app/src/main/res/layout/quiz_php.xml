@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
-    tools:context=".quiz_java">
+    tools:context=".quiz_php">
 
     <TextView
         android:layout_width="match_parent"
@@ -50,7 +50,7 @@
             android:textColor="@color/white"
             android:text="Option 1"
             android:textAllCaps="false"
-            android:id="@+id/optBtn1Java"
+            android:id="@+id/optBtn1Php"
             android:background="@color/purple_200"/>
         <Button
             android:layout_width="match_parent"
@@ -61,7 +61,7 @@
             android:textColor="@color/white"
             android:text="Option 2"
             android:textAllCaps="false"
-            android:id="@+id/optBtn2Java"
+            android:id="@+id/optBtn2Php"
             android:background="@color/purple_200"/>
         <Button
             android:layout_width="match_parent"
@@ -72,7 +72,7 @@
             android:textColor="@color/white"
             android:text="Option 3"
             android:textAllCaps="false"
-            android:id="@+id/optBtn3Java"
+            android:id="@+id/optBtn3Php"
             android:background="@color/purple_200"/>
         <Button
             android:layout_width="match_parent"
@@ -83,7 +83,7 @@
             android:textColor="@color/white"
             android:text="Option 4"
             android:textAllCaps="false"
-            android:id="@+id/optBtn4Java"
+            android:id="@+id/optBtn4Php"
             android:background="@color/purple_200"/>
 
     </LinearLayout>

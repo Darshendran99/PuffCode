@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GroupB17">
         <activity
+            android:name=".quiz_python"
+            android:exported="false" />
+        <activity
+            android:name=".quiz_php"
+            android:exported="false" />
+        <activity
+            android:name=".quiz_cpp"
+            android:exported="false" />
+        <activity
             android:name=".quiz_java"
             android:exported="false" />
         <activity
