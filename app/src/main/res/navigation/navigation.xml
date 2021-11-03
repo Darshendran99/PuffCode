@@ -19,7 +19,7 @@
         android:id="@+id/newsFragments"
         android:name="com.example.groupb17.NewsFragments"
         android:label="fragment_news_fragments"
-        tools:layout="@layout/fragment_news_fragments" />
+        tools:layout="@layout/fragment_news" />
     <fragment
         android:id="@+id/cppFragment"
         android:name="com.example.groupb17.cppFragment"
