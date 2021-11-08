@@ -13,7 +13,34 @@
     <string name="yesAccount">Already Have an Account?</string>
     <string name="loginhere">Login Here</string>
     <string name="signup">Sign Up</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- String-array for News-->
+    
+    <string-array name="newsTitle">
+        <item>Meta [NEWS18] </item>
+        <item>QuantumAI [ScienceDaily] </item>
+        <item>Games Coding [Techradar] </item>
+        <item>Google PlayStore [Developer] </item>
+        <item>Elon Musk on World Hunger [NBC News] </item>
+        <item>Intel 12th Gen CPU [Peta Pixel] </item>
+    </string-array>
+    
+    <string-array name="newsDesc">
+        <item>What is Metaverse and Why Facebook/ Meta Thinks its the Future of Internet</item>
+        <item>Breakthrough proof clears path for quantum AI</item>
+        <item>Itching to code? These are the best games to learn programming skills</item>
+        <item>Google slashes its Play Store cut for more developers</item>
+        <item>Elon Musk says he is willing to spend $6 billion to fight world hunger — on one condition</item>
+        <item>Intel’s 12th Gen CPUs Show Impressive Performance for Photographers</item>
+    </string-array>
+
+    <string-array name="newsLink">
+        <item>https://www.news18.com/news/tech/explained-what-is-metaverse-and-why-facebook-meta-thinks-its-the-future-of-internet-4416881.html</item>
+        <item>https://www.sciencedaily.com/releases/2021/10/211018154236.htm</item>
+        <item>https://www.techradar.com/news/best-games-to-learn-programming-skills</item>
+        <item>https://developer-tech.com/news/2021/oct/25/google-slashes-its-play-store-cut-for-more-developers/</item>
+        <item>https://www.nbcnews.com/business/business-news/elon-musk-says-willing-spend-6-billion-fight-world-hunger-one-conditio-rcna4301</item>
+        <item>https://petapixel.com/2021/11/05/intels-12th-gen-cpus-show-impressive-performance-for-photographers/</item>
+    </string-array>
 
 </resources>
