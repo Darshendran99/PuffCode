@@ -12,14 +12,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyNewsHolder> {
 
-    String data1[], data2[];
+    String data1[], data2[], data3[];
     int images[];
     Context context;
 
-    public MyAdapter(Context ct, String s1[], String s2[], int img[]){
+    public MyAdapter(Context ct, String s1[], String s2[], String s3[], int img[]){
         context = ct;
         data1 = s1;
         data2 = s2;
+        data3 = s3;
         images = img;
     }
 
@@ -35,6 +36,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyNewsHolder> {
     public void onBindViewHolder(@NonNull MyNewsHolder holder, int position) {
         holder.titleNews.setText(data1[position]);
         holder.descNews.setText(data2[position]);
+        holder.linkNews.setText(data3[position]);
         holder.newsImageView.setImageResource(images[position]);
     }
 
@@ -45,13 +47,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyNewsHolder> {
 
     public class MyNewsHolder extends RecyclerView.ViewHolder{
 
-        TextView titleNews, descNews;
+        TextView titleNews, descNews, linkNews;
         ImageView newsImageView;
 
         public MyNewsHolder(@NonNull View itemView) {
             super(itemView);
             titleNews = itemView.findViewById(R.id.titleNews);
             descNews = itemView.findViewById(R.id.descNews);
+            linkNews = itemView.findViewById(R.id.linkNews);
             newsImageView = itemView.findViewById(R.id.newsImageView);
         }
     }

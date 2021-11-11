@@ -41,7 +41,7 @@ public class Login extends AppCompatActivity {
                 Toast.makeText(Login.this, "Please Enter Your Username", Toast.LENGTH_SHORT).show();
             }
             else if(pass_word.equals("")){
-                Toast.makeText(Login.this, "Please Enter Your textInputLayoutPassword",Toast.LENGTH_SHORT).show();
+                Toast.makeText(Login.this, "Please Enter Your Password",Toast.LENGTH_SHORT).show();
             }
             else{
                 Intent loginSuccess = new Intent(Login.this, MainActivity.class);
