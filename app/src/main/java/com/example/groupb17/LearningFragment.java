@@ -17,7 +17,6 @@ public class LearningFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_learning, container, false);
-
         //Intent to cpp
         ImageButton cpp = (ImageButton) view.findViewById(R.id.cpp);
         cpp.setOnClickListener(new View.OnClickListener() {
