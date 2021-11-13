@@ -7,7 +7,6 @@
     <string name="signuphere">Sign Up Here</string>
     <string name="login">Enter</string>
     <string name="signuptxt">Register</string>
-    <string name="fullname">Full Name</string>
     <string name="email">Email</string>
     <string name="passwordCon">Retype Password</string>
     <string name="yesAccount">Already Have an Account?</string>

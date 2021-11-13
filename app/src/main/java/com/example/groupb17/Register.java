@@ -11,20 +11,22 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Register extends AppCompatActivity {
-    EditText textInputLayoutFullname,textInputLayoutEmail, textInputLayoutPassword,textInputLayoutPasswordConfirm;
+    EditText username, password, repassword;
     Button buttonSignUp;
     TextView loginText;
+    DBHelper myDB;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        textInputLayoutFullname = findViewById(R.id.textInputLayoutFullname);
-        textInputLayoutEmail = findViewById(R.id.textInputLayoutEmail);
-        textInputLayoutPassword = findViewById(R.id.textInputLayoutPassword);
-        textInputLayoutPasswordConfirm = findViewById(R.id.textInputLayoutPasswordConfirm);
 
+        username = (EditText) findViewById(R.id.username);
+        password = (EditText) findViewById(R.id.password);
+        repassword = (EditText) findViewById(R.id.repassword);
         buttonSignUp = findViewById(R.id.buttonSignUp);
         loginText = findViewById(R.id.loginText);
+        myDB = new DBHelper(this);
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
@@ -33,31 +35,32 @@ public class Register extends AppCompatActivity {
         buttonSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String FullName, Email, UserName, Password1, Password2;
+                String user = username.getText().toString();
+                String pass = password.getText().toString();
+                String repass = repassword.getText().toString();
 
-                FullName = textInputLayoutFullname.getText().toString();
-                Email = textInputLayoutEmail.getText().toString();
-                Password1 = textInputLayoutPassword.getText().toString();
-                Password2 = textInputLayoutPasswordConfirm.getText().toString();
-
-                if (FullName.equals("")) {
-                    Toast.makeText(Register.this, "Please Enter Your Full Name", Toast.LENGTH_SHORT).show();
-                } else if (Email.equals("")) {
-                    Toast.makeText(Register.this, "Please Enter Your Email", Toast.LENGTH_SHORT).show();
-                } else if (Password1.equals("")) {
-                    Toast.makeText(Register.this, "Please Enter Your Password", Toast.LENGTH_SHORT).show();
-                } else if (Password2.equals("")) {
-                    Toast.makeText(Register.this, "Please Re-Enter Your Password", Toast.LENGTH_SHORT).show();
-                } else if (!Password1.equals(Password2)) {
-                    Toast.makeText(Register.this, "The Password Do No Match", Toast.LENGTH_SHORT).show();
-                }
+                if(user.equals("")||pass.equals("")||repass.equals(""))
+                    Toast.makeText(Register.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
                 else{
-                    Toast.makeText(Register.this, "Successfully Registered", Toast.LENGTH_SHORT).show();
-                    Intent Registered = new Intent(Register.this,Login.class);
-                    startActivity(Registered);
-                    finish();
-                }
-            }
+                    if(pass.equals(repass)){
+                        Boolean checkuser = myDB.checkusername(user);
+                        if(checkuser==false){
+                            Boolean insert = myDB.insertData(user, pass);
+                            if(insert==true){
+                                Toast.makeText(Register.this, "Registered successfully", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(getApplicationContext(),Login.class);
+                                startActivity(intent);
+                            }else{
+                                Toast.makeText(Register.this, "Registration failed", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                        else{
+                            Toast.makeText(Register.this, "User already exists! please sign in", Toast.LENGTH_SHORT).show();
+                        }
+                    }else{
+                        Toast.makeText(Register.this, "Passwords not matching", Toast.LENGTH_SHORT).show();
+                    }
+                } }
         });
         loginText.setOnClickListener(new View.OnClickListener() {
             @Override

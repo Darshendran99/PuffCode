@@ -11,9 +11,10 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Login extends AppCompatActivity {
-    EditText textInputLayoutUsername,textInputLayoutPassword;
-    Button buttonLogin;
+    EditText username, password;
+    Button   buttonLogin;
     TextView signUpText;
+    DBHelper DB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,40 +26,41 @@ public class Login extends AppCompatActivity {
 
         setContentView(R.layout.activity_login);
 
-        textInputLayoutUsername = findViewById(R.id.textInputLayoutUsername);
-        textInputLayoutPassword = findViewById(R.id.textInputLayoutPassword);
+        username = (EditText) findViewById(R.id.username1);
+        password = (EditText) findViewById(R.id.password1);
+        buttonLogin = (Button) findViewById(R.id.buttonLogin);
+        signUpText = (TextView) findViewById(R.id.signUpText);
+        DB = new DBHelper(this);
 
-        buttonLogin = findViewById(R.id.buttonLogin);
-        signUpText = findViewById(R.id.signUpText);
+        buttonLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
-        buttonLogin.setOnClickListener(view -> {
-            String username,pass_word;
+                String user = username.getText().toString();
+                String pass = password.getText().toString();
 
-            username = textInputLayoutUsername.getText().toString();
-            pass_word = textInputLayoutPassword.getText().toString();
-
-            if(username.equals("")){
-                Toast.makeText(Login.this, "Please Enter Your Username", Toast.LENGTH_SHORT).show();
-            }
-            else if(pass_word.equals("")){
-                Toast.makeText(Login.this, "Please Enter Your Password",Toast.LENGTH_SHORT).show();
-            }
-            else{
-                Intent loginSuccess = new Intent(Login.this, MainActivity.class);
-                startActivity(loginSuccess);
-                finish();
-
+                if (user.equals("") || pass.equals(""))
+                    Toast.makeText(Login.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
+                else {
+                    Boolean checkuserpass = DB.checkusernamepassword(user, pass);
+                    if (checkuserpass == true) {
+                        Toast.makeText(Login.this, "Sign in successfull", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                        startActivity(intent);
+                    } else {
+                        Toast.makeText(Login.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
+                    }
+                }
             }
         });
+
         signUpText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent visitRegister = new Intent(Login.this,Register.class);
+                Intent visitRegister = new Intent(Login.this, Register.class);
                 startActivity(visitRegister);
                 finish();
             }
         });
-
-
     }
 }
