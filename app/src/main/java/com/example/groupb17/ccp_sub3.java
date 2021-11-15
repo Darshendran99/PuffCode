@@ -13,15 +13,20 @@ public class ccp_sub3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ccp_sub3);
+        // initiate back_learn_btn
         back_learn_btn = findViewById(R.id.back_learn_btn);
+
+        // perform a click event on button ImageButton
         back_learn_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // Intent for back button
                 Intent backLearnBtn = new Intent(ccp_sub3.this, cpp_Learn.class);
                 startActivity(backLearnBtn);
                 finish();
             }
         });
+        //Hides the Action Bar for more screen space
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }

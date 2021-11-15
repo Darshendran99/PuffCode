@@ -38,7 +38,7 @@
     <string name="python_subtopic_4">Classes and Objects</string>
 
 
-    <!-- String-array for News-->
+    <!-- String-array for News Title-->
     <string-array name="newsTitle">
         <item>Meta [NEWS18] </item>
         <item>QuantumAI [ScienceDaily] </item>
@@ -47,7 +47,7 @@
         <item>Elon Musk on World Hunger [NBC News] </item>
         <item>Intel 12th Gen CPU [Peta Pixel] </item>
     </string-array>
-    
+    <!-- String-array for News Description-->
     <string-array name="newsDesc">
         <item>What is Metaverse and Why Facebook/ Meta Thinks its the Future of Internet</item>
         <item>Breakthrough proof clears path for quantum AI</item>
@@ -56,7 +56,7 @@
         <item>Elon Musk says he is willing to spend $6 billion to fight world hunger — on one condition</item>
         <item>Intel’s 12th Gen CPUs Show Impressive Performance for Photographers</item>
     </string-array>
-
+    <!-- String-array for News Link-->
     <string-array name="newsLink">
         <item>https://www.news18.com/news/tech/explained-what-is-metaverse-and-why-facebook-meta-thinks-its-the-future-of-internet-4416881.html</item>
         <item>https://www.sciencedaily.com/releases/2021/10/211018154236.htm</item>

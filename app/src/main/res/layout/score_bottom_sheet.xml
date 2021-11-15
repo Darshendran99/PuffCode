@@ -18,7 +18,7 @@
         android:text="Your score is"
         android:layout_margin="10dp"
         android:padding="3dp"
-        android:id="@+id/idTVscore"
+        android:id="@+id/scoreTxt"
         />
 
     <Button
@@ -28,7 +28,7 @@
         android:fontFamily="@font/open_sans"
         android:textColor="@color/black"
         android:text="Restart Quiz"
-        android:id="@+id/idBtnRestart"
+        android:id="@+id/restartQuizBtn"
         />
 
     <Button
@@ -38,7 +38,7 @@
         android:fontFamily="@font/open_sans"
         android:textColor="@color/black"
         android:text="Exit Quiz"
-        android:id="@+id/idBtnExit"
+        android:id="@+id/exitQuizBtn"
         />
 
 </LinearLayout>

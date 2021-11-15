@@ -1,6 +1,7 @@
 package com.example.groupb17;
 
-public class QuizModal {
+public class QuizStructure {
+    //initiate private string method for question, options and answer
     private String question;
     private String option1;
     private String option2;
@@ -8,7 +9,8 @@ public class QuizModal {
     private String option4;
     private String answer;
 
-    public QuizModal(String question, String option1, String option2, String option3, String option4, String answer) {
+    public QuizStructure(String question, String option1, String option2, String option3, String option4, String answer) {
+        // setting values through and arguments are passed in constructor
         this.question = question;
         this.option1 = option1;
         this.option2 = option2;
@@ -16,7 +18,7 @@ public class QuizModal {
         this.option4 = option4;
         this.answer = answer;
     }
-
+    //auto generated public String method with return value and void method
     public String getQuestion() {
         return question;
     }

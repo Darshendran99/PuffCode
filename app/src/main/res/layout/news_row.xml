@@ -76,9 +76,9 @@
 
                 <TextView
                     android:id="@+id/linkNews"
-                    android:layout_width="wrap_content"
+                    android:layout_width="340dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
+                    android:layout_marginStart="35dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="15dp"
                     android:fontFamily="@font/open_sans"

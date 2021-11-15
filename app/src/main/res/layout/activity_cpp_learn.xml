@@ -9,6 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/gradient_background"
+        android:paddingBottom="350dp"
         tools:context=".cpp_Learn">
 
         <ImageButton
@@ -131,7 +132,7 @@
             android:layout_height="1dp"
             android:background="@color/white"
             android:paddingBottom="200dp"
-            android:layout_marginBottom="400dp"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.262"
