@@ -27,10 +27,10 @@ public class Login extends AppCompatActivity {
         //Change Content View from Splash screen to Activity Login Page
         setContentView(R.layout.activity_login);
         // initiate EditText, Button and TextView
-        username = (EditText) findViewById(R.id.username_Login);
-        password = (EditText) findViewById(R.id.password_Login);
-        buttonLogin = (Button) findViewById(R.id.buttonLogin);
-        signUpText = (TextView) findViewById(R.id.signUpText);
+        username = findViewById(R.id.username_Login);
+        password = findViewById(R.id.password_Login);
+        buttonLogin = findViewById(R.id.buttonLogin);
+        signUpText = findViewById(R.id.signUpText);
         //initiate Sqlite database from userDB.java
         userLoginDatabase = new userDB(this);
         // perform a click event on Login button

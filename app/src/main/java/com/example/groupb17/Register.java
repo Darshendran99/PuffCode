@@ -21,9 +21,9 @@ public class Register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         // initiate EditText, Button and TextView
-        username = (EditText) findViewById(R.id.username_Register);
-        password = (EditText) findViewById(R.id.password_Register1);
-        confirmPass = (EditText) findViewById(R.id.password_Register2);
+        username = findViewById(R.id.username_Register);
+        password = findViewById(R.id.password_Register1);
+        confirmPass = findViewById(R.id.password_Register2);
         buttonSignUp = findViewById(R.id.buttonSignUp);
         loginText = findViewById(R.id.loginText);
         //initiate Sqlite database from userDB.java
