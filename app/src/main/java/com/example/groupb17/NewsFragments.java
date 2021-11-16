@@ -36,7 +36,7 @@ public class NewsFragments extends Fragment {
     //Create a public onResume method
     public void onResume(){
         super.onResume();
-        // Set title bar Name to respective Fragmnent
+        // Set title bar Name to respective Fragment
         ((MainActivity) getActivity())
                 .setActionBarTitle("News");
 
