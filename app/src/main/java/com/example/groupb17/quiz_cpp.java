@@ -19,7 +19,7 @@ public class quiz_cpp extends AppCompatActivity {
     private ArrayList<QuizStructure> cppArrayList;
     Random random;
     // Create integer for score, question attempted and variable to store Random
-    int currentScore = 0, questionAttempted= 1, currentQuest;
+    int currentScore = 1, questionAttempted= 1, currentQuest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -130,7 +130,7 @@ public class quiz_cpp extends AppCompatActivity {
                 //Reset all integers to default value
                 setDataToViews(currentQuest);
                 questionAttempted = 1;
-                currentScore = 0;
+                currentScore = 1;
                 //Dismiss bottomSheetDialog
                 bottomSheetDialog.dismiss();
             }
@@ -142,7 +142,7 @@ public class quiz_cpp extends AppCompatActivity {
                 //Reset all integers to default value
                 setDataToViews(currentQuest);
                 questionAttempted = 1;
-                currentScore = 0;
+                currentScore = 1;
                 // Intent to Main Activity
                 Intent exitCppQuiz = new Intent(quiz_cpp.this,MainActivity.class);
                 startActivity(exitCppQuiz);
@@ -176,44 +176,37 @@ public class quiz_cpp extends AppCompatActivity {
     //Create the initialised method as private void to get the questions
     private void getQuizQuestion(ArrayList<QuizStructure> cppArrayList) {
         //add data to arrayList with questions, options and answers
-        cppArrayList.add(new QuizStructure("1cpp",
-                "//comment","\\comment", "==comment","<!-- comment",
-                "//comment"));
+        cppArrayList.add(new QuizStructure("#include<userdefined.h> \n Which of the following is the correct syntax to add the header file in the C++ program?",
+                "a. \t #include<userdefined>","b. \t #include \"userdefined.h\"", "c. \t <include> \"userdefined.h\"","d. \t both (a) and (b)",
+                "d. \t both (a) and (b)"));
+        cppArrayList.add(new QuizStructure("Which of the following is the correct syntax to print the message in C++ language?",
+                "a. cout <<\"hello world!\";","b. Cout << Hello world! ;", "c.\tOut <<\"Hello world!;","d.\tNone of the above",
+                "a. cout <<\"hello world!\";"));
+        cppArrayList.add(new QuizStructure("Which of the following is the correct identifier?",
+                "a.\t$var_name","b.\tvar_123", "c.\tvarname@","d.\tNone of the above",
+                "b.\tvar_123"));
+        cppArrayList.add(new QuizStructure("Which of the following is the address operator?",
+                "a.\t @","b.\t #", "c.\t &","d.\t %",
+                "c.\t &"));
+        cppArrayList.add(new QuizStructure("Which of the following is the correct syntax to read the single character to console in the C++ language?",
+                "a.\tRead ch()","b.\tGetline vh()", "c.\tget(ch)","d.\tScanf(ch)",
+                "c.\tget(ch)"));
+        cppArrayList.add(new QuizStructure("Which of the following comment syntax is correct to create a single-line comment in the C++ program?",
+                "a.\t//comment","b.\t/Comment/", "c.\tComment//","d.\tNone of the above",
+                "a.\t//comment"));
+        cppArrayList.add(new QuizStructure("For inserting a new line in C++ program, which one of the following statements can be used?",
+                "a.\t\\n","b.\t\\r", "c.\t\\a","d.\tNone of the above",
+                "a.\t\\n"));
+        cppArrayList.add(new QuizStructure(" Which one of the following represents the tab?",
+                "a.\t\\n","b.\t\\t", "c.\t\\r","d.\tNone of the above",
+                "b.\t\\t"));
+        cppArrayList.add(new QuizStructure("Which of the following is the correct syntax for declaring the array?",
+                "a.\tinit array []","b.\tint array [5];", "c.\tArray[5];","d.\tNone of the above",
+                "b.\tint array [5];"));
+        cppArrayList.add(new QuizStructure("Which of the following can be considered as the object of an array?",
+                "a.\tIndex of an array","b.\telements of the array", "c.\tFunctions of the Array","d.\tAll of the above",
+                "b.\telements of the array"));
 
-        cppArrayList.add(new QuizStructure("2cpp",
-                "Program Container","Main Method", "Statement Block","Sentence",
-                "Main Method"));
 
-        cppArrayList.add(new QuizStructure("3cpp",
-                "full stop (.)","comma (,)", "semi colon (;)","exclamation mark (1)",
-                "semi colon (;)"));
-
-        cppArrayList.add(new QuizStructure("4cpp",
-                "0","2", "4","6",
-                "0"));
-
-        cppArrayList.add(new QuizStructure("5cpp",
-                "byte","boolean", "character","integer",
-                "boolean"));
-
-        cppArrayList.add(new QuizStructure("6cpp",
-                "int","byte", "short","double",
-                "double"));
-
-        cppArrayList.add(new QuizStructure("7cpp",
-                "/","//", "/*......*/","*/....*/",
-                "\"/*......*/"));
-
-        cppArrayList.add(new QuizStructure("8cpp",
-                "if","then", "goto","while",
-                "goto"));
-
-        cppArrayList.add(new QuizStructure("9cpp",
-                "1 and 2","2 and 3", "3 and 4","1 and 4",
-                "3 and 4"));
-
-        cppArrayList.add(new QuizStructure("10cpp",
-                "It must be marked final.","It can be marked abstract.", "It can be marked public.","It can be marked static",
-                "It can be marked abstract."));
     }
 }

@@ -175,45 +175,45 @@ public class quiz_python extends AppCompatActivity {
     //Create the initialised method as private void to get the questions
     private void getQuizQuestion(ArrayList<QuizStructure> quizStructureArrayList) {
         //add data to arrayList with questions, options and answers
-        quizStructureArrayList.add(new QuizStructure("1phy",
-                "//comment","\\comment", "==comment","<!-- comment",
-                "//comment"));
+        quizStructureArrayList.add(new QuizStructure("Which one of the following is the correct extension of the Python file?",
+                "a.\t.py","b.\t.python", "c.\t.p","d.\tNone of these",
+                "a.\t.py"));
 
-        quizStructureArrayList.add(new QuizStructure("2phy",
-                "Program Container","Main Method", "Statement Block","Sentence",
-                "Main Method"));
+        quizStructureArrayList.add(new QuizStructure("Which character is used in Python to make a single line comment?",
+                "a.\t/","b.\t//", "c.\t#","d.\t!",
+                "c.\t#"));
 
-        quizStructureArrayList.add(new QuizStructure("3phy",
-                "full stop (.)","comma (,)", "semi colon (;)","exclamation mark (1)",
-                "semi colon (;)"));
+        quizStructureArrayList.add(new QuizStructure("Which of the following is not a keyword in Python language?",
+                "a.\tval","b.\traise", "c.\ttry","d.\twith",
+                "a.\tval"));
 
-        quizStructureArrayList.add(new QuizStructure("4phy",
-                "0","2", "4","6",
-                "0"));
+        quizStructureArrayList.add(new QuizStructure(" Which of the following functions is a built-in function in python language?",
+                "a.\tval()","b.\tprint()", "c.\tfactorial()","d.\tNone of these",
+                "b.\tprint()"));
 
-        quizStructureArrayList.add(new QuizStructure("5phy",
-                "byte","boolean", "character","integer",
-                "boolean"));
+        quizStructureArrayList.add(new QuizStructure("The output to execute string.ascii_letters can also be obtained from:?",
+                "a.\tcharacter","b.\tascii_lowercase_string.digits", "c.\tlowercase_string.upercase","d.\tascii_lowercase+string.ascii_upercase",
+                "d.\tascii_lowercase+string.ascii_upercase"));
 
-        quizStructureArrayList.add(new QuizStructure("6phy",
-                "int","byte", "short","double",
-                "double"));
+        quizStructureArrayList.add(new QuizStructure("What happens when '2' == 2 is executed?",
+                "a.\tfalse","b.\tture", "c.\tValueError occurs","d.\tTypeError occurs",
+                "a.\tfalse"));
 
-        quizStructureArrayList.add(new QuizStructure("7phy",
-                "/","//", "/*......*/","*/....*/",
-                "\"/*......*/"));
+        quizStructureArrayList.add(new QuizStructure("How many control statements python supports?",
+                "a.\tfour","b.\tfive", "c.\tthree","d.\tNone of the these",
+                "c.\tthree"));
 
-        quizStructureArrayList.add(new QuizStructure("8phy",
-                "if","then", "goto","while",
-                "goto"));
+        quizStructureArrayList.add(new QuizStructure("How many keywords present in the python programming language?",
+                "32","61", "33","27",
+                "33"));
 
-        quizStructureArrayList.add(new QuizStructure("9phy",
-                "1 and 2","2 and 3", "3 and 4","1 and 4",
-                "3 and 4"));
+        quizStructureArrayList.add(new QuizStructure("Which of the following arithmetic operators cannot be used with strings in python?",
+                "a.\t+","b.\t*", "c.\t-","d.\tAll of the mentioned",
+                "c.\t-"));
 
-        quizStructureArrayList.add(new QuizStructure("10phy",
-                "It must be marked final.","It can be marked abstract.", "It can be marked public.","It can be marked static",
-                "It can be marked abstract."));
+        quizStructureArrayList.add(new QuizStructure("Which of the following keywords is not reversed keyword in python?",
+                "a.\tNone","b.\tclass", "c.\tgoto","d.\tand",
+                "c.\tgoto"));
     }
 
 }

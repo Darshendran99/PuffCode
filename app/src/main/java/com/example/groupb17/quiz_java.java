@@ -19,7 +19,7 @@ public class quiz_java extends AppCompatActivity {
     private ArrayList<QuizStructure> javaArrayList;
     Random random;
     // Create integer for score, question attempted and variable to store Random
-    int currentScore = 0, questionAttempted= 1, currentQuest;
+    int currentScore = 1, questionAttempted= 1, currentQuest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -130,7 +130,7 @@ public class quiz_java extends AppCompatActivity {
                 //Reset all integers to default value
                 setDataToViews(currentQuest);
                 questionAttempted = 1;
-                currentScore = 0;
+                currentScore = 1;
                 //Dismiss bottomSheetDialog
                 bottomSheetDialog.dismiss();
             }
@@ -142,7 +142,7 @@ public class quiz_java extends AppCompatActivity {
                 //Reset all integers to default value
                 setDataToViews(currentQuest);
                 questionAttempted = 1;
-                currentScore = 0;
+                currentScore = 1;
                 // Intent to Main Activity
                 Intent exitCppQuiz = new Intent(quiz_java.this,MainActivity.class);
                 startActivity(exitCppQuiz);
@@ -182,8 +182,8 @@ public class quiz_java extends AppCompatActivity {
                 "//comment"));
 
         quizStructureArrayList.add(new QuizStructure("public static void main (String [] args) is a:",
-                "Program Container","Main Method", "Statement Block","Sentence",
-                "Main Method"));
+                "Program Container","main method", "Statement Block","Sentence",
+                "main method"));
 
         quizStructureArrayList.add(new QuizStructure("All statements must end with:",
                 "full stop (.)","comma (,)", "semi colon (;)","exclamation mark (1)",
@@ -218,8 +218,8 @@ public class quiz_java extends AppCompatActivity {
                 "3 and 4"));
 
         quizStructureArrayList.add(new QuizStructure("Which is true about a method-local inner class?",
-                "It must be marked final.","It can be marked abstract.", "It can be marked public.","It can be marked static",
-                "It can be marked abstract."));
+                "it must be marked final.","it can be marked abstract.", "it can be marked public.","it can be marked static",
+                "it can be marked abstract."));
     }
 
 }

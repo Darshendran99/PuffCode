@@ -178,45 +178,45 @@ public class quiz_php extends AppCompatActivity {
     //Create the initialised method as private void to get the questions
     private void getQuizQuestion(ArrayList<QuizStructure> quizStructureArrayList) {
         //add data to arrayList with questions, options and answers
-        quizStructureArrayList.add(new QuizStructure("1Php",
-                "//comment","\\comment", "==comment","<!-- comment",
-                "//comment"));
+        quizStructureArrayList.add(new QuizStructure("PHP stands for ",
+                "a.\thypertext preprocessor","b.\tPretext Hypertext Preprocessor", "c.\tPersonal Home Processor","d.\tNone of the above",
+                "a.\thypertext preprocessor"));
 
-        quizStructureArrayList.add(new QuizStructure("2php",
-                "Program Container","Main Method", "Statement Block","Sentence",
-                "Main Method"));
+        quizStructureArrayList.add(new QuizStructure("Variable name in PHP starts with -",
+                "a.\t! (Exclamation)","b.\t$ (dollar)", "c.\t& (Ampersand)","d.\t# (Hash)",
+                "b.\t$ (dollar)"));
 
-        quizStructureArrayList.add(new QuizStructure("3php",
-                "full stop (.)","comma (,)", "semi colon (;)","exclamation mark (1)",
-                "semi colon (;)"));
+        quizStructureArrayList.add(new QuizStructure("Which of the following is the default file extension of PHPNext",
+                "a.\t.php","b.\t.hphp", "c.\t.xml","d.\t.html",
+                "a.\t.php"));
 
-        quizStructureArrayList.add(new QuizStructure("4php",
-                "0","2", "4","6",
-                "0"));
+        quizStructureArrayList.add(new QuizStructure("Which of the following is not a variable scope in PHP?",
+                "a.\textern","b.\tlocal", "c.\tstatic","d.\tglobal",
+                "a.\textern"));
 
-        quizStructureArrayList.add(new QuizStructure("5php",
-                "byte","boolean", "character","integer",
-                "boolean"));
+        quizStructureArrayList.add(new QuizStructure("Which of the following is correct to add a comment in php?",
+                "a.\t& …… &","b.\t// ……", "c.\t/* …… */","d.\tboth (b) and (c)",
+                "d.\tboth (b) and (c)"));
 
-        quizStructureArrayList.add(new QuizStructure("6php",
-                "int","byte", "short","double",
-                "double"));
+        quizStructureArrayList.add(new QuizStructure("Which of the following is used to display the output in PHP?",
+                "a.\techo","b.\twrite", "c.\tprint","d.\tboth (a) and (c)",
+                "d.\tboth (a) and (c)"));
 
-        quizStructureArrayList.add(new QuizStructure("7php",
-                "/","//", "/*......*/","*/....*/",
-                "\"/*......*/"));
+        quizStructureArrayList.add(new QuizStructure("Which of the following is the use of strlen() function in PHP?",
+                "a.\tThe strlen() function returns the type of string","b.\tthe strlen() function returns the length of string", "c.\tThe strlen() function returns the value of string/","d.\tThe strlen() function returns both value and type of string",
+                "b.\tthe strlen() function returns the length of string"));
 
-        quizStructureArrayList.add(new QuizStructure("8php",
-                "if","then", "goto","while",
-                "goto"));
+        quizStructureArrayList.add(new QuizStructure("Which of the following is used for concatenation in PHP?",
+                "a.\t+ (plus)","b.\t* (Asterisk)", "c.\t. (dot)","d.\tappend()",
+                "c.\t. (dot)"));
 
-        quizStructureArrayList.add(new QuizStructure("9php",
-                "1 and 2","2 and 3", "3 and 4","1 and 4",
-                "3 and 4"));
+        quizStructureArrayList.add(new QuizStructure("Which of the following starts with __ (double underscore) in PHP?",
+                "a.\tInbuilt constants","b.\tUser-defined constants", "c.\tmagic constants","d.\tDefault constants",
+                "c.\tMagic constants"));
 
-        quizStructureArrayList.add(new QuizStructure("10php",
-                "It must be marked final.","It can be marked abstract.", "It can be marked public.","It can be marked static",
-                "It can be marked abstract."));
+        quizStructureArrayList.add(new QuizStructure("Which of the following is the correct way to create a function in PHP?",
+                "a.\tCreate myFunction()","b.\tNew_function myFunction()", "c.\tfunction myfunction()","d.\tNone of the above",
+                "c.\tfunction myfunction()"));
     }
 
 }
