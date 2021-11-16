@@ -1,5 +1,6 @@
 package com.example.groupb17;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -7,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import java.util.ArrayList;
@@ -49,6 +52,18 @@ public class quiz_cpp extends AppCompatActivity {
                 if(cppArrayList.get(currentQuest).getAnswer().trim().equals(optionBtn1.getText().toString().trim().toLowerCase())){
                     //increment Score Value by 1 if the answer is option 1
                     currentScore++;
+                }else{
+                    //Alert Dialog when the answer selected is wrong
+                    AlertDialog alertDialog1 = new AlertDialog.Builder(quiz_cpp.this).create();
+                    alertDialog1.setMessage("Wrong Answer");
+                    alertDialog1.setButton(AlertDialog.BUTTON_NEUTRAL, "Continue",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.dismiss();
+                                }
+                            });
+                    alertDialog1.show();
+
                 }
                 //Else if option 1 is not the right answer increment question attempt by 1
                 questionAttempted++;
@@ -65,6 +80,17 @@ public class quiz_cpp extends AppCompatActivity {
                 if(cppArrayList.get(currentQuest).getAnswer().trim().equals(optionBtn2.getText().toString().trim().toLowerCase())){
                     //increment Score Value by 1 if the answer is option 2
                     currentScore++;
+                }else{
+                    //Alert Dialog when the answer selected is wrong
+                    AlertDialog alertDialog2 = new AlertDialog.Builder(quiz_cpp.this).create();
+                    alertDialog2.setMessage("Wrong Aswer");
+                    alertDialog2.setButton(AlertDialog.BUTTON_NEUTRAL, "Continue",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.dismiss();
+                                }
+                            });
+                    alertDialog2.show();
                 }
                 //Else if option 2 is not the right answer increment question attempt by 1
                 questionAttempted++;
@@ -81,6 +107,17 @@ public class quiz_cpp extends AppCompatActivity {
                 if(cppArrayList.get(currentQuest).getAnswer().trim().equals(optionBtn3.getText().toString().trim().toLowerCase())){
                     //increment Score Value by 1 if the answer is option 3
                     currentScore++;
+                }else{
+                    //Alert Dialog when the answer selected is wrong
+                    AlertDialog alertDialog3 = new AlertDialog.Builder(quiz_cpp.this).create();
+                    alertDialog3.setMessage("Wrong Answer");
+                    alertDialog3.setButton(AlertDialog.BUTTON_NEUTRAL, "Continue",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.dismiss();
+                                }
+                            });
+                    alertDialog3.show();
                 }
                 //Else if option 3 is not the right answer increment question attempt by 1
                 questionAttempted++;
@@ -97,6 +134,17 @@ public class quiz_cpp extends AppCompatActivity {
                 if(cppArrayList.get(currentQuest).getAnswer().trim().equals(optionBtn4.getText().toString().trim().toLowerCase())){
                     //increment Score Value by 1 if the answer is option 4
                     currentScore++;
+                }else{
+                    //Alert Dialog when the answer selected is wrong
+                    AlertDialog alertDialog4 = new AlertDialog.Builder(quiz_cpp.this).create();
+                    alertDialog4.setMessage("WrongAnswer");
+                    alertDialog4.setButton(AlertDialog.BUTTON_NEUTRAL, "Continue",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.dismiss();
+                                }
+                            });
+                    alertDialog4.show();
                 }
                 //Else if option 4 is not the right answer increment question attempt by 1
                 questionAttempted++;

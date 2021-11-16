@@ -37,7 +37,7 @@
 
         <TextView
             android:id="@+id/php_subtopic_1"
-            android:layout_width="wrap_content"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="104dp"
@@ -62,7 +62,7 @@
 
         <TextView
             android:id="@+id/php_subtopic_2"
-            android:layout_width="wrap_content"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="48dp"
@@ -87,7 +87,7 @@
 
         <TextView
             android:id="@+id/php_subtopic_3"
-            android:layout_width="wrap_content"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="48dp"
@@ -112,7 +112,7 @@
 
         <TextView
             android:id="@+id/php_subtopic_4"
-            android:layout_width="wrap_content"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="48dp"
