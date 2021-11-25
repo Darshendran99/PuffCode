@@ -31,6 +31,18 @@ public class NewsFragments extends Fragment {
         techNews.setAdapter(myAdapter);
         techNews.setLayoutManager(new LinearLayoutManager(getActivity()));
 
+/*
+        Button urlBtn = (Button) view.findViewById(R.id.urlBtn);
+        urlBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://developer-tech.com/news/2021/oct/25/google-slashes-its-play-store-cut-for-more-developers/"));
+                startActivity(browserIntent);
+            }
+        });
+
+ */
+
         return view;
     }
     //Create a public onResume method
